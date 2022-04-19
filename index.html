@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Portal de filmes 2</title>
+  </head>
+
+  <body onload="carregaFilmes5()">
+    <!--Cabeçalho-->
+    <header class="cabecalho">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-area">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Em destaque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Avaliações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Entrevistas & Bastidores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" id="txtPesquisa" type="text" placeholder="Pesquisar filme">
+              <button class="btn btn-outline-light" onclick="pesquisaFilmes()">Pesquisar</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Carrosel-->
+    <div class="carrosel" id="car">
+      <div class="titulo">
+        <h1>Lançamentos</h1>
+      </div>
+      <img src="" alt="">
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators dark">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="car0"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" id="carrosel">
+
+            <!--Filme 1-->
+            <div class="carousel-item active">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/PgrmbRID0eY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Vingadores Ultimato</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de
+                    lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e
+                    comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Joe Russo, Anthony Russo&nbsp <strong>Roteirista: </strong> Christopher
+                    Markus, Stephen McFelly&nbsp <strong>Estreia: </strong>2019</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br>Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett
+                    Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Bradley
+                    Cooper e Josh Brolin.</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+            </div>
+
+            <!--Filme 2-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/XkuStMTguRc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Clouds</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> O jovem músico Zach Sobiech descobre que tem apenas alguns meses de vida
+                    devido a um câncer terminal. Com pouco tempo, ele corre atrás de seu sonho e grava um álbum, sem saber
+                    que logo se tornaria um fenômeno da internet. Assim, a música dá um novo significado à vida de Zach,
+                    ajudando-o a encontrar a maneira perfeita de se despedir: uma música que será ouvida por todo o mundo.
+                  </p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Justin Baldoni&nbsp <strong>Roteirista: </strong> Laura Sobiech&nbsp
+                    <strong>Estreia: </strong>2020</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br>Fin Argus, Sabrina Carpenter, Madison Iseman, Neve Campbell, Tom Everett, Scott, Lil Rel Howery</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+            </div>
+
+            <!--Filme 3-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/xo_7GA4Y-AU" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Até o Último Homem</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> Em Até o Último Homem, durante a Segunda Guerra Mundial, o médico do
+                    exército Desmond T. Doss (Andrew Garfield) se recusa a pegar em uma arma e matar pessoas, porém,
+                    durante a Batalha de Okinawa ele trabalha na ala médica e salva mais de 75 homens, sendo condecorado.
+                    O que faz de Doss o primeiro Opositor Consciente da história norte-americana a receber a Medalha de
+                    Honra do Congresso.</p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Mel Gibson&nbsp <strong>Roteirista: </strong> Robert Schenkkan e Andrew
+                    Knight &nbsp <strong>Estreia: </strong>2016</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br> Andrew Garfield, Vince Vaughn, Sam Worthington, Luke Bracey, Teresa
+                    Palmer, Rachel Griffiths, Richard Roxburgh, Luke Pegler, Richard Pyros, Ben Mingay, Dirani Firass,
+                    Nico Cortez, Michael Sheasby, Goran Kleut, Jacob Warner, Harry Greenwood, Damien Thomlinson, Ben
+                    O'Toole, Benedict Hardie, Robert Morgan, Ori Pfeffer, Milo Gibson, Nathaniel Buzolic, Hugo Weaving e
+                    Ryan Corr.</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+              <div class="carousel-button">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Conteúdo do portal-->
+    <main class="container main col-12" id="main">
+
+      <div class="row">
+
+        <!--Cards-->
+        <div class="linha">
+          <h3 class="titulo">Filmes Populares</h3>
+          <a class="btn btn-dark" id="carregar" onclick="carregaFilmes10()">+ Carregar mais filmes</a>
+        </div>
+        <div id="telinha">
+                
+        </div> 
+        <div class="linha">
+          <h3 class="titulo">Séries Populares</h3>
+          <a class="btn btn-dark" id="carregar1" onclick="carregaSerie10()">+ Carregar mais filmes</a>
+        </div>
+        <div id="tela">
+
+        </div>
+        <!--Últimas Avaliações-->
+        <section class="ultimas">
+          <div>
+            <h3>Últimas Avaliações</h3>
+          </div>
+          <div class="avaliacoes">
+            <a class="btn btn-dark" id="carregar-mais" href="#" role="button" onclick="carregaCarrosel()">+ Carregar mais avaliações</a>
+            <!--Avaliação 1-->
+            <div class="card-avaliacoes av1">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa1.jpg" alt="Perfil 1">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Adalberto - Meu Pai</h5>
+                    <p class="card-text">Filmaço que merece de fato, as indicações ao Oscar. Anthony Hopkins e Olivia
+                      Colman em atuações incríveis. Uma obra que trata com delicadeza, porém de maneira complexa as
+                      relações entre pais e filhos em determinado momento da vida.</p>
+                    <p class="card-text"><small>19/03/2021</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Avaliação 2-->
+            <div class="card-avaliacoes av2">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa3.jpg" alt="Perfil 2">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Paola - Dia do Sim</h5>
+                    <p class="card-text">Super leve, divertido e gostoso de assistir. Talvez seja uma lição para alguns
+                      pais. O elenco faz a diferença, pela sintonia.</p>
+                    <p class="card-text"> <small>08/04/2021</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Avaliação 3-->
+            <div class="card-avaliacoes av3">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa2.jpg" alt="Perfil 3">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Gilberto - Fuja</h5>
+                    <p class="card-text">Gostei demais! O filme é bastante objetivo e sem enrolação, sua dinâmica é tão
+                      boa que o filme passou tão rápido que eu nem percebi. A história prende do início ao fim com cenas
+                      de muita tensão e mistério. Ótimo suspense. Valeu pela expectativa.</p>
+                    <p class="card-text"><small>10/04/2021</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--Entrevistas e Making of-->
+        <section class="entrevistas">
+          <div>
+            <h3>Entrevistas & Making of</h3>
+          </div>
+          <div class="making-of">
+            <a class="btn btn-dark" id="filmes" href="#" role="button">+ Carregar mais filmes</a>
+            <!--Making of 1-->
+            <div class="movie1">
+              <iframe class="back" src="https://www.youtube.com/embed/6qxQPdG4400" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>Sonic</h4>
+              <p><strong>Diretor</strong> Jeff Fowler <br> <strong>Roteiro: </strong> Patrick Casey e Josh Miller <br>
+                <strong>Estreia:</strong> 2020</p>
+            </div>
+
+            <!--Making of 2-->
+            <div class="movie2">
+              <iframe class="back" src="https://www.youtube.com/embed/ypvd2LJCJHg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>1917</h4>
+              <p><strong>Diretor</strong> Sam Mendes <br> <strong>Roteiro: </strong> Krysty Wilson-Cairns <br>
+                <strong>Estreia:</strong> 2019
+              <p>
+            </div>
+
+            <!--Making of 3-->
+            <div class="movie3">
+              <iframe class="back" src="https://www.youtube.com/embed/y6j2I0pGIo0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>Nasce uma Estrela</h4>
+              <p><strong>Diretor</strong> Bradley Cooper <br> <strong>Roteiro: </strong> Eric Roth e Will Fetters <br>
+                <strong>Estreia:</strong> 2018
+              <p>
+            </div>
+          </div>
+        </section>
+        
+        <!--Novidades-->
+        <section class="grid" id="grid">
+          <div class="novidades" id="novidades">
+            <h3>Novidades</h3>
+            <!--Notícia 1-->
+            <div class="nov1">
+              <div class="card mb-3">
+                <div class="row ">
+                  <div class="col-md-4 imagem">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXFxUXGBcWFxcaGBcXFxcYFxgXGBUYHSggGBolHRgVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAREAuAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABCEAACAQIEAwYDBgQEBQQDAAABAhEAAwQSITEFQVEGEyJhcYEykaEHFEJSscEjYtHwM3Lh8RWCkrLCQ6LD4jSDs//EABsBAAIDAQEBAAAAAAAAAAAAAAMEAgUGAQAH/8QAMxEAAQQABAMGBgEFAQEAAAAAAQACAxEEEiExQVFxBRNhgZHwIjKhscHRFCMzQuHxcgb/2gAMAwEAAhEDEQA/ABxNMLVxmqMtWwWQDU/NUr2SI86qZtaK2ToBUJJciYigMhoKTCYYEgRrRxeHr4ZFV8HZVTM0ct2swFUGL7RdnppW0wHYsMcWaYAkqLD4LIRG1GsP51Cg2qzZWkRiyTbinjHGxmRooI1YuZkATQjl1qbKGEnSN6DDFZBNWcLxYtEgefnRx8WrVUS4Z7dQNFNiMVJ6AbVC+KWp8ZYWJGxoc1oVx72taCmMO1paq95yx1OnSou7muQZ1FXrFvSkJptdFYk5Ah1/h6OIZZ9qongqKwIUaVpRbplyzNA/kytFBxrqUEOYXZnNBPMgE+pFrAdo8Abb5/wsdI9NZoEz16L2owynC3CRsAw8iCIrzMvWo7JxbpsPTt26eVaLJ9q4VrMQXN2dr58fXfzUhauZqjzVwNViXJANUs10Go5pwrlr1KQUqaKVetcpVi1Qu9LvKaTRSdEINpPs70XsXAYXnOnvyoOpojw0nOD0POkMY4Bhdy26q67JD3TCMDRx16cUfw+FZRLDTl51fsYooPKp8SSba6b7+VD7gA0GorLCb+R8263cUbY2UBp6okeLLEU1OKlTI1oKLDKddjsf2NXfuZgHryqBGU0mBDFWvFWb/Fi52gdOtWcBjHM1VsYUKdaIYfDgbUWOSihS90G0BotHwq9nXI3t5Gu3rUGKp8OeCKNYhQwDdaalOdlhZ5ze6lNbFCWSpLIqe4AKhaKqnCijZrCkUjrSK0Pe5HOu9+wUlRJgwOp5UuZRspGM7rK9u+OHXDIRGneEddwnl1NYmaNYjs7itGdJZ212Jk6yY2FDuJ4B7L5H3gHTYg8612Afh42CGN4J3NHfn+ln8bFM9xle0huwv3x3P1pVZropRThViCq4tThThXFFPAqQQyugUq6BXa6oIQKQrs0yvErzQSVPNWcNfy1UQVIUPuKSxDQ8ZSrvs6R8Ds7el/hauxxIskE8qr2rx6zQTDXidKNYDCMdaz0kbcOSttBL/IYHAacUZwzBhBqZUKmCdDsagXDMuoohg7ebRv786A1zXjRSecou9FWaywO8jkaJYSrNjDR4WGn6+Yp64MqfLkaO2K0pJiA4Uf8Aqkwy60eIyqFnxHWqGAwpkV3iOKC3QelNupjNVUS3LLlbwH1QnG4okwOVR27j7UQuogMjZtR/frNIIOVUMzDmOqebI0NoBU1tGrWFsmasLbqRBQmxUUN8thRXrY0NYj7QLayjA+LUR5VubmleScaxbXLrEsSMzZfSTFWHZsTn4oObpl1P2r6pTEvDYHZtb0HU8+laeKoV0CnWbLMYUEnyone4FfS33jL4RqddR6itQ/FQxuDHuAJ2BOqoRhpXtL2NJHPh76Kgop0VxRUgFNhIOSApV0ClUlAoSbR9f2qx9weJ3qrhrho1hb3I1U4zFTREAUtd2T2XhMSwudeu2u3781W4blB8Q1nSreJtIdhqdZrmKsbEVGHNVjpO8f3oOvVaCPDthi/juALR4b/78VPw7BeKQJP60cwngMEa/wB8xQzCPpVtcQQNAGHQ/sRqKSnDpXEu3TbWtZGGNqvfv8o7YxA5063eAbSgy8SCgd2upmS0Od9hIgD2nzq5h8f/ACJPWD+gMfSuxxZaspd0J1IH1C1NnEILb3H+C2pdj6CfnTeynGBibM3cqvmMAEaidI9NvagrYhr1i/a08Vm4qgAATlMaDzrCWcW9nCWsTbzZTcNtm1yq0lkKkeW+ad4BFXmGhD2VdGxqs9jWOY4jlsLXs3G8W1m2Mg351gsdxd2Jk0Sx3a26im3dRVuBfhuKdRG411n1qrxvA5bo0AlQTG0xqB71CaLLFTt+fNF7Hf8A1ac3ceeinwGNZ7UT4rctqN1JAInqDr71as45wPPrQ/hNsq0gjY6HYyIAI8zFXxfRvihD1UaH1UbHzFZ+duataP381bStaHkBtjf18EU4biWbQ7RM1fDCh2EuW1GVWBMmQRBJ8gd6r3+LqDAkx7UGzG34v39lXmIyPOQIji9Qa80vcGvPeIZCJY6j4QJ5HnW6HEVPWu2rgJ0NcixjonF0dWRV710XThwW5ZAa3rgeqp8M4UloQoHmeZ9aJYrCC5ba2dmUg++lWRarsUJrCDmJs8+PquPfmXmfFODvYIzag7MNp6VRAr0btGUFhmeNPhB5tsB9a88UVseysZLiIz3g2NZuflzHsBZntLDRwvBZx4cvPkeXBOVaVSIlKrZVRWbwImj1q2AKzmEuxRAYyqnGYd8j9Nls+ysfDh4aduity5pAppw5iqVtyaI27umtInDujqlaNxzJrzKJXirFq9UV6DEVLh7dEbGCNku6ch2hU1uxALD3H71btXdKfZEAVzEWY8S7cx08/SoGAuNpqPGtaMrireCvFSCN6ucRtC7ZwmGKhUbF2FVQAFC2w91gANIyofnQjC3KudpBeF3CPYOuGs3sW4MwyqyqVAA3YZx6AjnT4YWM1VLjJ455mhpW34hhkusVdLbXF1tF0VipGukjw7D5VjMfjCSRc+Ka0q8QL3LV1BKOA49CNRPzoP2k4eveMAdtVP7HymoCMVR5X+CksLiXQvPPbpr7tAWxDDauKGPOpbFnWG0Iqa4gAqrxLA3YLSQYhz9yocXiSYk69etSW8WLg8ZysIGfkRyzxrpEZvnQ/EVCKrxCBvrabdICKGlIul90JBABB28/WrtnFZtxqKqYUW3W0GZlckIPDIZZgHcQRIHovtUWIv66bbD0GlAmwZGo8kFuIY80d+JRjCYvxBcxEnQiir3GUTJP1rHJcmivDOIMSqsZ5QeVB7pzAhyta422kO49euXjLSEU6CPDPWetCEtVruIYxNUiRzqj/wANVwGXwjnV12d2qIG5JQcvAgeyVUdo9ld+O8iAa7jZOo/H0tBkSlWl+421WYGg3pU+O3mH5Y3HzCrx/wDPOO8o9D+14/abWpbj61XE04tV+QqmyES4fdq+L2tBMPcip1v0u+ME2U1FO4CgjSMTV2wao4Nhzq0h6UAUTom3B7RqiqNVqy1CbdyieB1IFGijCUnxDjpav8P4Kzv4Bod+g/0opZtquLxEkMFw2HsR/ma87j3BSi2Fti1ZA/Fcj5VilvSmKvDZ8XdQH+WwiWR7SjH3oLnmV+Xhw/ag34GknevSyEQ7G3Vw1w4C45LAh7DMPC6bgDo0CCOqmivaDEWLV8K4Ys4zkL+ESFnXcliNB5kxWF7UZnw6Yq2YeyVRjMNBY5GU9QxIj+byobbF7iShyhNyywVysq5Qg5QV3fk0+tLyAseVcwRMxIbM4jXR3DXb6/7W/wCJ8NGjIQRqJkcjBB9DIoYy9RVrD2Lq4K2Ar5ke6GUhi6w5yhwdZiNTuINBbt52MyQdo/aKi6Ezxg2l2YkYXEOYNaJA8U66kbiqrr0q0rsfiikVFVz8KWFWzceHtpQqzQBO23lNWeJibjaAQTtt129SaiVauuudQQPEAAwG5AACtHPoT6UQMNFLPlAI8/qqKJUskbaHrUoSK53dRfC1worjMQWGwmBqKWH8C8tKpYa2NzrVrvKrMXGLEbRtxVjh5Cf6jjun3pjT5da7SW5BE12oxl8QytbaI7K82V40GpA13LSy1vVh9FIlWLKyariruHrjhouNdRVq3colgXnQ0LFWsI8GhhgUnzupHbWCbcajy3+VGuH2Ut5TdJBOoXQeHkTO08h70AOLBXJMTExv/oa5xm4ytZkk/wAK3BPOFj56UQM1AtLmW7Nar0a9iu8w4dd7ZMjoDtFZjA4RLVlcPazZJc+M5iS5kyY1q/2IvZ1uWyfiQx61Sa7kaI2NCjiDHuZy1HQrz5XOYDeh36j/AEVk+2HEUTLhLPiCOGuExDXPhW2DzAzGffpUGC4TdIN1ZNw5DaIIUgggFlVdcoGhPLMKNdseHYVRbxrEo7v3bL+BmKFu8K/haEgkbzr1qDAcTwyJP3hRpzuAzoRlidopItzOJedbWgjxT2YdjcO00N9CbN63VaaV0RPshxv75jLoZipuIyZM3hLW0tqGjaSe8NWsYoDZbgZWXQkAGQNBKkjlGs1n+zfCS3C1v2gfvK4m5eQgQxC5Fa2CNSCFmOoIrZ8bxYvWMNfCibttSSPMaj5/pS0EhDi08dQp4+FhDXs4fAR4jUHzH5Qa5hyRKHPEAgAg6zBI6afpVa9hLgBJVh5EH69Pen96FGm9Pw2NKsDqeUEmI5jy00ph9FJMDhsqNpmmiOGPseRpNhQfEhkdCPEPUbe4p6geWlBeBWiIHG6KtnK/xSG6gAgwOayIPmPlTDhjyKkdQR+hgj5VGWrrNIHX9uVCyomYVSROUkbjqNqZmk1GzVJaUzpS8zGgl3FMwPcWhqnyGNqVXsNh/wAxNdqtMgvVWDbrZeLUqcUrqpW5WOTQKsWWimi3SuLXlE0VZF08qd3pqtZPnUwNesIdG1asXdZNa3iNlSLdptSqKG6q5lzr1GePYis52fsZryEwVQi68xAS2QzSDv0jzq7YxRZizasxk+p1Nez69PyhmMnb3SJcHvth7ok7GQRzFa/i2C7+b1mCDBIG6mNZFZqyFuLB9j0NEuB457NwA/6EVGW3EPZ8w+oRYhQLXbH3awn2qYki5h8PyS0bhH81xioJ84T61i1O2+u07GN49K2H2sWmucVKIJLW8OqL5sPCPmfrXo7YGzaw9vBPbS5atoFZWEy0eJwdwxaTI11qnOaVxrqtNFI3DQsHNZn7N+OWwgwlwZVW4TauaQC8MVYgkakkgzzitXxLBXxhcrLbP8W4w7lWUAEycymYJJJMaVgu0PZA4ZWxWDuM9pdXtt8dtebSPjQc5ggddTWo7Odq71/Cd9OW5ZcW3jZxlDBiOupHtUQ4WGnQi9FCSIm5YzbSRfMHxQt5B2qRFjf61ql49hLoBuIyuRBygAT1mg3HcJ3NzIWL23UMpM6TMEen1FQlNjQokFA05uqoLjCp00/uOdWLOMUnxKkcyFAPrI2P0oYfOmzS/fEcU2cI1+tIvcuqomcynQGOf5SOR/WuXbgC5t6o4cAowzAHMh1mCBmG4BjUjep3tMbYDZV6HOp232J/rRmuJFpKWFrXUoTxBYOmvKorfFHDZgYP0+RqpicOVOvqCNiOoqBFM0HEublT2Bgt2y0GFx1zNmnffofalUGBBjWlVC91nYK6dCwGlifu4607uB50RXhbH4rnso/epBwteZY+rf0r6IvmecISbfrTTY8/pRleG2+n/ub+tSDhlvp9W/rUV3MAEC+7nrXRhm/s0dbh1sfm/wCpv612xwzMwVGaT5jkJJlhEAAmokKQeCncHQphrzZPzK2k94GChQDMhUMs0fmXnEDrLEGjmNsnvItuAlsstuANROrEz4i259Y20qpibio5MKWOUhQIVZUHbb2oObdHDNkU4RhzAZjlX6n0H71qOH5HZVUazo25rB4fGsTqTV7C9q7NjOwDuVzJ4RoLmUxr+UEAE8p50tJig00rCPs4ubmJ3911VLso7Yzj5u3BopuugIMZLam3a69Vb1FbLixIdvU0O+xrhoVHxLGST3CGSSAsNc31Etk/6aJcftkXGneaHhP8lPF13gaP8RSiwy96l2zp/FtXEAOxLIVE/Osv9la5vvdhiYa2rRGzIxWfXxfSjmEulWDDkaBY7Hf8M4i19UFy3fRnCkxHeNLqDBiGHyIpfF2HskGwOqcwYBjkirVwBb1Cv4jBMjQfY9RWluWvvODDEjPZMEn8h2rM4HtemJi3ftBGe5lVk+FZHhDZjMkyJ2rVWrRtYO5pqzhSeqxNLsp9lhsfZMzlzMoeMrrHnz/RWcfCAc59P2POojh6J2VEa1x7QilwGk5SEwZHjUFCe6ikt5hoDp6D5idj51cu26rtbptpDRuk3W92oTe9BEOuh5iJB6gHQTzilZwSnVX23zCCPYTIply21dwzwT6HTrSs5bIKBtOYfPFZ2Vj7sRry6jUfOlT0aNa7U4sK3LqEGbGvz6EIS+mgqlfxHTU0VxdvwtHnWbxRIBitXawzW2lcx5G59hUf/EG/3NUyh3pQTsNaiSjAClc++HmJ94q7g8QwtXbgVgQoQMTI8bBWjwjXLImdM3mKH2bY3dgBzAMsfIRoPcirNi/muCfhYZMo2CHQKOgGh9RO9QOq6KBXLHEHG532/rV23aza0Lya1cwfG7AbJnXMOpgecHYxVdjc4Z/T3Wg7IMTpKnFivfkgWP4tdt3biAjRsqkgeE6H30mqOHxjBsw1bX3JmdPMmq/GMV3l2442LSPaAPnvXEUaAGJO+316zVcXGgTurSmklrduC937GYorbe1sbd4kL+UXFV48/EW+dG+0uDDwdmif9DWC7HcQAxtpg4ZbqkE8yQ5QE9NQq/8ANW/46xDzy/Sp9kymRgB0LbH2Vb2tD3UxIN3R+/8A3zWPyEGCINee9psWLmJYi5nXQCCYAiMo95OnWtp2v4qZW1YYC6TDNpoPy66ZvPl+nm5WLgHQxr19DXO0JBeQdVYdkxmjIelfn34q/g2OZTyLCR5RqR7TXtPCMely0Awm3cCtvqCR1FeLIxGqkQCTtJJYARRDgvG7tprUv4EYmOUO5LFh11PpSODnbE52YaGvLVPdo4U4ljQw0W39v2AvSuJ8PNm5A1U6qeoqo61sL1hLtlD4SFWJ1003BHsaz97AHdSD7qI6A67nWPSnZI3B1hVEGIa5gDt0Pu28wjnVA2zNFmsMp8Xh9Tv6ddxUOKURmHvURG4spG75gfuoVUUhYB1iu2X8qmik2QOD7R5JhlpVbluKVT3BSq2adNVTPHxGkOuidR70BxuEIJHI7GqvDOOuTlfwv5/C3p0Pl/tRpsUrLBH+lXTXgqhfC+M0VmikaGoHUUUxltTtr5/1qiycq4XBTawquFq3hzlGY7z4R6bk+W316VCUp28eQj6k/vULU6tVOL4o27ZI3PhHlM6/KazNjyo92iMIsndv/E0DskRPKqvFuOdXvZ7B3d810vBB3j5E+YpgfRh7jXlToB0/T32qCIJ9KUVhVIzwnGundZDD27kpHMkoR7ZlmvccFx4Ymyty5COVBdWMLsCSC3LX9t68E4PdyXLbRs0/StJ2kxb27tqDmBsQOgliGj5CgNxDocQKGhBRpMEzE4cZiQQRXgDv10RLjoZWuXVU5M8ho0XOQYPqCCDzmhgsd74gZeQB/Prt5GaPNioweKzAQ1rDMR5lQpjy8NB8IBaysviTMsHz03jnS8c3fMLiOP4B/KJlMLw0bivPb2Uy3a8DAr4h13012+dR2gveaxDZjroBGorR4y0lwl0+M6kdRoJ23/WKBthP4kyDoTHXaR9aVcKsFOxS5jYXrHYniQezbDfC1sA+qiDHuDVniODa1qDKtseRH5W+dZfsdjka2ltSc6WmeII2ZlJn1BP+9bTh98XbTWnIkAso/FA3IHOJHzrQtOaMHwFrKyjupnDxKAY1FPKNPBrpG+VpmCJ+vKo8HbzeE89Kt38LKiDME8tdY18xpTMMsGpA5Vw/FqobdiPWuG3rRt8JJkc9Y9fOmNhV2Ig/386iI6XjMXIJcTWlRG5gyPMUq7qFFeZvh1I1AI/v5U+xI0aWXr+If1FJDFSq1WgAVW4vCsW8Mh1Bkf3uKgxPDAdQfalHMaHqP71qVL55j3H9K8WhcbI4IW2BI61xbRoy0Gs32yxptW1VGKu5OoOoVRrHSSQJ9aG8ZRaZif3hDaWY47jxdYED4Mw8iM2hHtFVrbRHpr+1QFvD0mpG1MctqrHkuOquo2NaNFfwuAv3PFbtOyzlzKCVDABiC2w3B12kVA2GeUOVodJXwnxEiYWd6O4LtNeTKrS6qJA0BLDQqWGqrlZhA28MUPu8XL37l97alriXQxWVOa5MvLZvFqR6Gg9EUZ7NhEuzHDmN7K6MCLdyJB3yLEH8Wjrt+YGiHavCXGGHbI0i20gLqo7wASBtqw9yKI9mOMm5bC92qhbbrImApeAoA55QwmTuBpAq52t4w+EewUEqQHC6ASj2zrproNOh96q3lhxYAPD8H9qyY+VsOrR4a9EC7u6bN/OrZTYQDQ72eRPIic0eYqLgzv3ZlCVbLGkyQw1B5fEpnzFdHEu8b8iNbKQzZoBVgBmIEL8OmnwjeBTOGceGe6vdQl4ywDeJfGjjKcugTIoAgfCDRI2MGYA6ae/opzmQ5SW6m/L67rQ8OlXY5TlCKx00CwWknloV+fmKdxDDgxdtkBlDaDYkjcfvQm9xkuWtQAC5JAjUtlgE8x4B/wBKREUSVspQLpLp7T4SPTnQ3Bp0vdLjO056119EO7L4g2rl+CVY4fEQRpDKhcfQNRr7O+LOeI2+8dj4HteMlozGdCerBRPtQzjdru2N5RMhg+oEZ1ZMwA9Sf7NUuCX+6v232MqQxnfNOw/yke9SEjgG++KNkbI155ivof8Aq9gu+B2BHMxuCPPT2qs9yTP9/PnV04+1iVYpcVrtnw3VB1GpEkeoPyNQd3Vq8uPy0s4w18wIV1cWFyTzWfqRV9XRxrBFC8UnweSD9TStGNq53rw6iNFzu2ltjdX7mBI1UyOh/Zv60qlwuLB0rtH1OyESRovGSlIJUX8TqP8ApNOBufy/I1ZZgkO7KnRaeFplt22IWfI/tQ6/2hRbhQqSAYLAgjz05xXDKBupsw7nnRFQI12868y7Q8QN++7cgci/5VJA+ep96M8b46xN3IxCuMgXnl6x+E7/ADoV2Z4YcTfWyEYljHh3A666QBSk81jwVhBhsh13P0VBljwneu2xuehH0ImvYeP/AGSLAazeGYquaVnYAHL4huZNZlvs0vLI72P/ANf/AN6VbmeNAUZ+Kgj+Z4Cx7uDpB0HXqRyqzwCwj4izbufA721czEKSAxnlpOtapfs5uR/jDl/6fT/moR2h7MHCqC94F2+FO7gkDckyYA9NaG6JwGoR4+0MM9wDXglenYbs7w+yJTEfl1FxDyEGCDpoDQbtTgrNy4A7d4iJ4JuJpLkMJQamAh269RQnsRgu+w5IYyrxlA0UeFlO4zZiu/kRyqt9pHEVe5atKGzWQQxMbvlIGh3hdfUUh3bxIHd2Ks/F711VgMTC53dCUl1atPDbw/KMpwTCRPMAQBcWTvtPPYb86whi3edRBAdwIMiAxA8Ua6AaxWj4J2Ru3ra3SxUH4dNSvWZETr7UB4zwW7hbgS4NDOVvwkdR0PlyopjdlstoFcGJhdN3bZA5w3HJR4U/xdCBqpnfkdq0YvuQvj1BVhJ10b8WmlVezfAvvCF7d0BhGdMmqnlOuoMGD69K0i9lWjnOmuX/AFocmGmdRa0n0Qz2ng2OLXSC/P8ASEY665JVpkzyEESTJ9v1qrxHwujpqAyHL0M5t+k1p8TwG8QYmdTB01M8+W/6VmsahS6qMhVgQSI6STpQzFIwDvG1vSnh8XBMT3Dw7mB/vVEuznG/u167ecGblu6ABr4rrAx5CeflWw7I8Rzp3JktaVPExkuGE/MSBXn3FrS5FKDSAY6a/pV7s7xVrOIVphIAfnKCJ332ocWIcxwJ21vzpMYjDNljdlGuleWw9NPResXjJ9AB8h/WaVQq1S1aF7SdFnwCAuW95pU5KVMNLaUHHVeI4niVxBJYksdvb6CqCcVvCYff0qm7kmSSfWmzTT5CiwYdoFHUone4qcmWIc7tPLqOhrPYjHDKQh1mPbqKu4z/AA2byI9zpWeoZJO6majGVvmnpRLhXHLuHJ7pigaAxXRiOmYax5ChqmuAbGoOaHbqFlen9nXvcRu2bS3bm3jbM3hUHxMdd+XqRXovb/HJgcEcmjsBbt8yNNW9hOvWK8z7IcRfALktn+K5HeaAnMfhtD/Lsf5i3lQzt32luYu9DPmW2MikbEz42EcidB5KKCIsgFHf7IDmB5Njb7rW/Y+ty/iHd3dltpszMRmYgDQnpmop297GYrE4o3LVsFAqqsso2GuhPUmsZ2F48+EtsUbL3hk6AyFkDfzzfOpcV9pmOztlvQJMDIn7rUywhoI8VDICTfS16B9nPZO9he979QM3wgMpGkdD/moWnYgYnid53/wEuS38xgQnpzPl60D4J9omMYMbl6YIA8KDlJ2AqKz9pF+1fdGuQjkMGCg5GKiSRGqnnGo312qIipgBOllFLnGUvA+Khr5Utr9onaNcFbFqzAukDkDkXrB0k8h0qHs7xvB8Vs/d8Qii7Hw7SR+O0eR8t/UV552oU4py5YC8YOpGS6CNIbYSIhtjsY3Afs7YZH7x8yBGgAyCXXcRuAvPzgdYk5jrq9/Qj9eKA2No1qvuvTuC9mH4bj1JObD3pth+QJIKhxyaQB7mjHafsgb+LtlGKq48cEiMka6cyCB7ViO0P2h4ju+7zgs8HZdFB323JED3PSrd3t5iWgi4MwGZJAjNEqDHI7H1rxiPxCwa1/f0UgwaOo66flbLthxK3w+wtu0kuVISR4VA3dj+I67c/SvMkvFrodsxMEs25zNznc1c4j20uYuzDkMh3UhZRumYCesMNx7ihvDnB2M6gAfp70hj43hoddt8OHXxVv2V3LczctP5nj0+h+qucQbKNdyoG24KyKhNlZzT1/TlVriDA+EiSYAPTXl8qjbBDWSSYB0g+HSZOkVTZtNVeMNFeocOb+Gms+EajnAirYNDOCOi2rVvMJCKDvvGu9FkWrOFjiwUbWfmoPPU/dIGuVZRKVMiJ5QbC+ayaQppNMu4gL5npVq5trkcmUWucRb+GR1IH7/tQbLVvEYgt6dKgSuUQENzw46LtsUd7LcMzHv2HhQ+CfxXOsdE39co60AVhIkSJ1ExPvWjwHFbt97dmyMjMQiLbHyAO4G5+ZpaZryMrOPFMYd0Qfml2HDn57AIpjMP3NtrkkNlhCTBLNC5lnUsAWYEcwDWPjUDQbDXYeZjlXoHFOBWxc+7J4rqgPiL9xtE23Y/CJI89QOtctdgQy52vZk7t3m2JnIQIBO8yeXKvRRObYJs8/wg4zHwy1JWUEaCjdczV1e4urGqHPZw4yqt9CoVVBi54oAzN8HM5j71lMX4XYAyAxhhIkToYIkTvrW/4P2Ci0z33dSIlFWckwQDoSXgjQbSKgvdm7JuItpLuII1dWDWoU6DUhTJMxuNDXWQlu7r9PwuS46Gf4Gii2xo0gab275ehtA+EWrXcAteRWZmJUi54RoqgkKQSdT7iqXHsOoZXtuHEAPAbwPJgHMo3AkR0Pv6LZ7P4UAD7nfElVgskjMQgle9mJjl51bxPZvDIt0/diwthc3iY5nIMIACSWgjcfjHnHu6ddh3l7CGe0Yi0RGN18CA2/M5/ED/AIV5fgOIRltuC1vXQfEhO5Sfqux8jrRfGYu2BmN3vSqwq+OSBqFkgZVHPXQTGsVqbHYe2/d3O6NrNLFQzeC1My7OT4iANgsZjvFMw3YpCGuMrhHcLYQnxEEwrtI2yy2XoD5VCSNxcC0pmDtGBkbmu3uvluidNDxO55ZRd8/Mbt5nYsx1Jk/6DkNgB5UewzWwiTc8WUbBtOcbctvatjxLsAv3uyEt5LBtkvHLuzqS35mzJ8ieVK/2Mw11reS5ctd7b7xECiTbUCWJIMbgyTzojoXE6Gq9+iVw/akETWvcCcwuspNda46E9NV51jHyXCbbZgZ0E89SpHr+3MUcwiAEMjjN6/qKK3eyGGsJbN69dRnQNCpmB0E/CpIHqasnsVZdVZLl23mtd7/EUEBTsWbQKfKevSouhcW5c3Dw16okXamHidncwkE6fC4AanY1Z67KDvy7qCI0YkecaZatBiqOW1lgADsNCYM+2nlQLC8LxKNmF5VVWOVvExMEjMFI0BjYkb1e4hiS1onkHQmBv4WWfLlp51nZYm5srSCPDqtTG/NrlIHj7+4HRHsLj2CgRpCxB5FQR+taPgfH48FzQfhM/Q1kOHWj3SHqB/t7bVaFqn4Iy1rZGpHEFjnOjcvSkxU7a+9drDYPGssAyV+o9KVPCUKtOGcNtV47iL07bCoZrppoqzVckabk60+uMa5S7aiYVv8AsTGDU3gwXEupCkpmFtTsNRudz7DrWCFSi80asx9ST+tcsDUi1yRpeKBpehcJ4phUt3Ld293puuWulg3iKsSuu8TrvqTNEbXbkoG7t1XRLNlSoypbX8ZEdSTG5yrXlLOTzpj7e9CvSqHopGFpJcXO9dPIV4emmy9kPbe0lsW1xN1QDJZEXMxMlizMp3Jk1juLdp7jXX7u9dCuTJL+K5mAUs8RyAAHIVjLelWEOub0qDzpsiwRNY67J/8ARv8AA1XpPZztBdzi7iLzN3ZOWYMXTOcmRBgMYn8+lFE7a3EhkugWwxe8e7lnuOdUWRpGmp0gjpXnK8IxLp3ma1k0fM2Jw6hc87qbkoSdIgGQRyo8Eu3MOAP4kKRKeMMwCBlBXQkEpt+YdaUmmdExoAvXUp2LBxYmZ7nOIFaNGgAqvW7PXXgFpbv2hOy3DlJZxoGClSgEAOfXMco6713B/aAWS2zsTdtoYBRPFcKAMwjQLqw9CdKyScMuqLi5Vy5zbzs6pbNwQGVHuEByDI8M0JfDvaYo6lWAkqdxzgjlprXBiX62B6IknZWGd8jnc/mPIadNNep41W3wfbZ2wxw966Qzs4ZiP/TdszQ28kF1A9OlWL3ay2zvluy1xVtGFUBLCalAdlmX21lh0rDXHXKdtgeWh/sDSquGuLqZgn1jWptxRDayoEnZjZJM3eOFkmtK9+Gy9A4z2sa+r2hi8quMpVFt5o2IzjVQdZIjSu4ntwHJw75WsZFAOVYzD8J00AGWCNiPljXDPDDwkyR+56HSmgWsxtuQWBEsR6Eiee8VH+cD/gPuvDsXLVyuutOHQ2OVIzjLsjwNmtk8uQjQb6+vP6VG+HHd3lBOlsPB/ldGPl/vVQW1RoGgI5QN/QeVEcM+hiCXtOuuoMQTod9FPzFU8xaHXGKG9K9hDwxrZCCdr2vr48/sF37y9m1ZdI1LggzBiCunLTp1o5w3GpfHh8LjUqTrHUHmKA9ony5bWnhCEctlI9Nss+YoVYuEEEEggyCNCD1BouFxL2N5jXTzKliMGyYXs7n++a9A+7mlQ/CdpkNr+IpNwbRs/mfy+f0pVYGaHfN91VDD4nUZft9F5PXKdFcIq5VGuTXGFdiuVxdtIDSmk1NlppFcIXg5RipI0PpNNFPjQ0MhTDlXFTBoBpirrXcunzqJFqbXLbJx/AWiqrbuvaNtGYKArC6LS2hbzFhoqviWNwSS92RsDRLh3acXWdrVvuSbJtIA+5zBywUABDAYCJI8Anw15qRpRvhVzwWxtDXiSN/hBn6fWlcQ34NEzhsveC/fD7IvwTtAMNae2e8hmJhQCIKMpVWLA2CSVOdQTp5QROAzZhl+KdP83Ie5P1rmIUzcUDWM3uBn09pFUbN7nzmflFAy5mq0DxG+xxRnilkZEuosI4ggbC4JzDynQx60LtWjH9/pUp4m4tGzplLlj69PTam27+kRttG4rzGuayj5dOCA9zXyaeypbLBcxUkmIHuY2+VXuyKh8SAwBzB9DOv8N5X11n2oOX6bn+59eftRbsm2TF2idILN/wCxhQpm0x3RTY422lc4wCl1k0EaCDI00MHmAQR7U/hLTdQkSBmc+YUFiK72hUDIfxfxUbzyXT4vU5pp/ZO4DiZIHdhXA6AxI/7TSb21GSOATzZDev0Vntq04idNQIA5R19yflQRDRvtjrcVuRB+ek/t86BLQcOP6LeibaaFKwjUqagO9dqRap51mqc1KlWwWCUZrgpUqgpBS0ylSrxUGpop/I0qVQKkFEOdSHl6fuKVKolTCjGxojwz/wAbn/aK7SoE3yFMwfMFcs/4q/5F/wD50Gt7D0pUqVj4+X5VjJ/j5/hdP7j9Kkt0qVFdsgt+dJOXtRng/wD+Qnqn60qVLT/KehTEO46hWO034P8ANe/+Kpeyn+Mv/N/2NSpUpL/YPQ/lHi+ZE+1v4PU/otZ9aVKlsN/aHn91YBSLvSpUqIURf//Z" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Thor Love and Thunder tem seu primeiro Teaser divulgado - 19/04/2002 </h5>
+                      <p class="card-text">Através do youtube, a Marvel divulgou a primeira visão do novo filme.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--Sobre-->
+          <div class="sobre">
+            <h3>Sobre</h3>
+            <p>Portal desenvolvido pelo aluno Pedro Teodoro Castro Valadares como trabalho da disciplina de Desenvolvimento
+              de Interfaces Web pela Universidade PUC Minas unidade Coração Eucarístico.</p>
+          </div>
+
+          <!--Editorial-->
+          <div class="editorial">
+            <h3>Editorial</h3>
+            <p><strong>Redação: </strong> Pedro Teodoro <br> <strong>Pesquisa: </strong> Pedro Teodoro <br> <strong>Gerente
+                Geral: </strong>Pedro Teodoro</p>
+          </div>
+
+          <!--Redes Sociais-->
+          <div class="redes">
+            <h3>Redes Sociais</h3>
+            <p>
+              <a href="https://www.instagram.com/joao.augustoss/" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a> &nbsp
+              <a href="https://twitter.com/joo_aug" target="blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg></a> &nbsp
+              <a href="https://www.facebook.com" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></a>
+            </p>
+          </div>
+        </section>
+      </div>
+      </div>
+    </main>
+
+    <!--Rodapé-->
+    <footer class="footer bg-dark">
+      <div class="footer-area row">
+        <div class="creditos col-12">
+          Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - DIW PUC Minas
+        </div>
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
